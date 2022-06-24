@@ -1,9 +1,9 @@
-# Plot-a-cluster-heatmap
-使用complexheatmap包绘制较为复杂的聚类热图
+# Plot-a-cluster-heatmap/CCA analysis
+heatmap_plot.R：使用complexheatmap包绘制较为复杂的聚类热图
+CCA_analysis.R:CCA分析
 
 
-
-
+CCA_analysis.R env.tsv  Ingredients.tsv prefix
 heatmap_plot.R env.tsv  Ingredients.tsv prefix
 
 
@@ -31,3 +31,4 @@ heatmap_plot.R env.tsv  Ingredients.tsv prefix
 
 
 ![D9ECFB9B-7F7C-43CC-863F-651A2B62DDA2](https://user-images.githubusercontent.com/61085371/175490640-8fc6248c-4238-4aa2-9eb2-9c00664f31f6.png)
+![DE236396-19D3-4271-B241-DDE4565224E9](https://user-images.githubusercontent.com/61085371/175500972-ef82065b-3aae-4d15-9575-70f23f9fdb71.png)
