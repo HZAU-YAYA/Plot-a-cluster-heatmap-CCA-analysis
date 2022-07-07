@@ -67,7 +67,8 @@ correlation_analysis <- function(data1, data2, prefix){
   #p3 <- Heatmap(data.1,cluster_columns = F, cluster_rows = F)
   col_fun = colorRamp2(c(-1, 0, 1), c("blue", "white", "red"))
   #ha <- rowAnnotation(empty = anno_empty(border = FALSE),Microbiome = data.1,annotation_legend_param = list(Microbiome = list(title = "Microbiome")), col = list(Microbiome = col_fun))
-  ha <- rowAnnotation(empty = anno_empty(border = FALSE),Microbiome = data.1, col = list(Microbiome = col_fun),show_legend = F, annotation_label="Microbiome")
+  ha <- rowAnnotation(empty = anno_empty(border = FALSE),Microbiome = data.1, col = list(Microbiome = col_fun),show_legend = F, 
+                      foo = anno_text(rownames(data.1)),annotation_label="Microbiome")
 #right_annotation=ha
   p1 <- Heatmap(rvalue,name= "Correcation coefficient",column_title = "Correcation coefficient", column_title_gp = gpar(fontface = 'bold', fontsize = 20),cluster_columns = T, cluster_rows = T, show_row_names=F,show_heatmap_legend = TRUE,width = unit(90, "cm"), height = unit(5, "cm"),
 column_dend_height=unit(3,"cm"),
